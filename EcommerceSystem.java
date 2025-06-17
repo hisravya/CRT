@@ -35,26 +35,26 @@ public class EcommerceSystem{
             System.out.println("8. Exit");
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
-            sc.nextLine(); 
+            sc.nextLine();
             switch (choice) {
                 case 1:
-				    addProduct();
+   addProduct();
                 case 2 :
-				    updateProductByName();
+   updateProductByName();
                 case 3 :
-				    deleteProductByName();
+   deleteProductByName();
                 case 4 :
-				    searchProductByName();
+   searchProductByName();
                 case 5 :
-				    displayProducts();
+   displayProducts();
                 case 6 :
-				    sortProductsByPrice(true);
-                case 7 : 
-			        sortProductsByPrice(false);
+   sortProductsByPrice(true);
+                case 7 :
+       sortProductsByPrice(false);
                 case 8 :
-				    System.out.println("Exiting...");
-                default: 
-				    System.out.println("Invalid choice. Try again.");
+   System.out.println("Exiting...");
+                default:
+   System.out.println("Invalid choice. Try again.");
             }
         } while (choice != 8);
     }
@@ -65,7 +65,7 @@ public class EcommerceSystem{
         double price = sc.nextDouble();
         System.out.print("Enter product rating (0 to 5): ");
         double rating = sc.nextDouble();
-        sc.nextLine(); 
+        sc.nextLine();
         products.add(new Product(name, price, rating));
         System.out.println("Product added successfully.");
     }
